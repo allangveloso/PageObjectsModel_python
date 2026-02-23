@@ -104,11 +104,12 @@ def base_url():
 @pytest.fixture
 def credentials():
     return {
-        "username": os.getenv("USERNAME"),
-        "password": os.getenv("PASSWORD")
+        "username": os.getenv("USERNAME"),  #estão no arquivo .evn
+        "password": os.getenv("PASSWORD")   #estão no arquivo .evn
     }
 
 
+"""
 # Hook para capturar falhas
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
@@ -133,3 +134,4 @@ def pytest_runtest_makereport(item, call):
             
         except Exception as e:
             print(f"Falha ao capturar screenshot: {e}")
+"""

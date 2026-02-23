@@ -12,4 +12,4 @@ class LoginPage(BasePage):  #a classe LoginPage herda a classe BasePage
     def login(self, username: str, password: str):
         self.type(self.USERNAME_TXT, username)
         self.type(self.PASSWORD_TXT, password)
-        self.click(self.LOGIN_BTN)  
+        self.click(self.LOGIN_BTN)

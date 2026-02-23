@@ -22,7 +22,7 @@ class BasePage:
         self.wait.until(EC.element_to_be_clickable(locator)).click()
 
     def type(self, locator: tuple, text: str):
-        element = self.find(*locator)
+        element = self.find(locator)
         element.clear()
         element.send_keys(text)
 

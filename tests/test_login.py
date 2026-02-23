@@ -4,7 +4,7 @@ from pages.login_page import LoginPage
 # from pages.inventory_page import InventoryPage
 
 
-def test_login(driver):
+def test_login(driver, base_url, credentials):
     login = LoginPage(driver)
     # inventory = InventoryPage(driver)
 
